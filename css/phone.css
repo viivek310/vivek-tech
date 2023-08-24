@@ -1,0 +1,182 @@
+/* navigation bar */
+/* #navbar{
+    flex-direction: column;
+} */
+#navbar{
+    justify-content: space-around;
+    height: 70px;
+}
+.menu-items{
+    position: fixed;
+    flex-direction: column;
+    text-align: center;
+    height: 0;
+    top: -100%;
+    /* transform: scaleX(0); */
+    width: 100%;
+}
+.menu-items .nav1{
+    background: red;
+}
+#navbar ul li{
+    /* font-size: 1.1rem; */
+    margin: 10px 10px;
+} 
+#navbar ul li a {
+    padding: 0px;
+}
+#logo {
+    font-size: 0.7rem;
+}
+.hamburger{
+    display: block;
+}
+.active{
+    /* transform: scaleX(1); */
+    top: 70px ;
+    height: auto;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.6); */
+    /* opacity: 0.7; */
+    /* z-index: -2; */
+}
+/* home section  */
+.nav1{
+    background: red; 
+}
+
+#home {
+   
+    top: -200px;
+    /* width: 100vw; */
+    padding: 0 50px;
+    padding-top: 250px;
+}
+
+#home::before{
+    height: 110%;
+}
+#home h1 {
+    margin: 5px;
+}
+
+/* services section  */
+
+#services-container {
+    padding: 0px 50px;
+    margin-top: -120px;
+    /* height: 120vh; */
+}
+#services-container::before {
+    top: -78%;
+    height: 195%;
+}
+#services-container > h1{
+    margin: 20px;
+    padding:  50px;
+}
+#services{
+    flex-direction: column;
+}
+/* 
+#services-container > h1 {
+    margin: 23px;
+    margin-top: 50px;
+} */
+#services .box img {
+    max-width: 160px;
+}
+
+
+
+
+
+/* clients section  */
+
+#client-section{
+    padding: 20px;
+    height: auto;
+}
+#client-section::before {
+    height: 165%;
+    top: -65%;
+}
+#client-section > h1 {
+    margin: 15px;
+    padding: 20px
+}
+.clients{
+    /* flex-wrap:nowrap ; */
+    padding: 20px;
+}
+.client-item {
+    margin: 5px 20px;
+}
+.clients img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 100%;
+}
+
+
+/* contact section  */
+
+#contact-box form{
+    width: 70%;
+}
+
+#contact-box input,#contact-box textarea{
+    
+    font-size: 0.8rem;
+}
+#contact-box label {
+    font-size: 1.1rem;
+}
+
+/* footer  */
+
+
+
+/* utility classes */
+
+.h-primary{
+    font-size: 2.5rem;
+}
+.h-secondary{
+    font-size: 2rem;
+}
+.font1{
+    font-size: 0.8rem;
+}
+.font2{
+    font-size: 1rem;
+}
+@media screen and (max-width: 820px) {
+     #services-container::before {
+        height: 185%;
+    }
+}
+@media screen and (max-width: 650px) {
+    #services-container::before {
+       height: 180%;
+   }
+}
+@media screen and (max-width: 400px) {
+    #home{
+        padding-inline: 0px;
+    }
+    #services-container{
+        padding: 0px;
+        }
+        #services-container::before {
+            height: 180%;
+        }
+
+        #contact h1{
+            padding: 20;
+        }
+        #contact{
+            padding: 0
+        }
+}
