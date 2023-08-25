@@ -19,13 +19,13 @@ section::before{
     transition: all 0.8s ease;
 }
 .nav{
-    background: #01b0d3ad;   
+    background: #01b0d3ee;   
 }
 .nav1{
-    background: #006d77ad;   
+    background: #006d77ee;   
 }
 .nav2{
-    background: #a4c3b2ad;  
+    background: #a4c3b2ee;  
 }
 #navbar ul li{
     /* font-size: 1.1rem; */
