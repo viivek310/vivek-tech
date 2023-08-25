@@ -5,24 +5,27 @@ section::before{
 #navbar{
     justify-content: space-around;
     height: 70px;
+    transition: all 0.8s ease;
 }
 .menu-items{
     position: fixed;
     flex-direction: column;
     text-align: center;
     height: 0;
-    top: -100%;
-    background: #03045e;
+    top: 70px;
+    left: -100%;
+    background: #03045ead;
     width: 100%;
+    transition: all 0.8s ease;
 }
 .nav{
-    background: #01b0d3;   
+    background: #01b0d3ad;   
 }
 .nav1{
-    background: #006d77;   
+    background: #006d77ad;   
 }
 .nav2{
-    background: #a4c3b2;  
+    background: #a4c3b2ad;  
 }
 #navbar ul li{
     /* font-size: 1.1rem; */
@@ -38,13 +41,9 @@ section::before{
     display: block;
 }
 .active{
-    /* transform: scaleX(1); */
-    top: 70px ;
+   left: 0;
     height: auto;
     text-align: center;
-    /* background: rgba(0, 0, 0, 0.6); */
-    /* opacity: 0.7; */
-    /* z-index: -2; */
 }
 /* home section  */
 
@@ -155,7 +154,7 @@ section::before{
 }
 
 /* media query */
-
+ 
 @media screen and (max-width: 820px) {
      #services-container::before {
         height: 185%;
