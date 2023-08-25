@@ -33,7 +33,7 @@ section::before,footer::before{
     position: fixed;
     top: 0px;
     width: 100%;
-    z-index: 1;
+    z-index: 1 ;
     height: 100px;
     min-height: 50px;
     background: #03045e;
@@ -209,7 +209,7 @@ margin-top: -90px;
 }
 .client-item{
     margin: 5px 40px;
-    flex-basis: 1;
+    /* flex-basis: 1; */
     border-radius: 50%;
     overflow: hidden;
 }
