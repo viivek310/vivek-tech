@@ -23,20 +23,26 @@ window.onscroll = function () {
     if (window.scrollY >= (home.offsetHeight)+(service.offsetHeight)+(client.offsetHeight)-200) {
         nav.removeAttribute("class");
         nav.classList.add("nav2");
-        m.classList.add("nav1")
+        m.classList.add("nav2");
         // myNav.classList.remove("nav-transparent");
     } 
-    else if(window.scrollY >= (home.offsetHeight)+(service.offsetHeight)) {
+    else if(window.scrollY >= (home.offsetHeight)+(service.offsetHeight)-100) {
         nav.removeAttribute("class");
         nav.classList.add("nav1");
+        m.classList.add("nav1");
     }
     // let h = (home.offsetHeight)+(service.offsetHeight)
-    else if(window.scrollY >= home.offsetHeight) {
+    else if(window.scrollY >= home.offsetHeight-100) {
         nav.removeAttribute("class");
         nav.classList.add("nav");
+        m.classList.add("nav");
     }
     
     else{
         nav.removeAttribute("class");
+        m.classList.remove("nav");
+        m.classList.remove("nav1");
+        m.classList.remove("nav2");
+        m.classList.add("navd")
     }
 };

@@ -19,7 +19,7 @@ section::before,footer::before{
     content: '';
     position: absolute;
     background: #03045e;
-    width: 100%;
+    width: 100%;    
     height: 100%;
     border-radius: 0 0 600px 600px;
     top: 0;
@@ -36,14 +36,13 @@ section::before,footer::before{
     z-index: 1;
     height: 100px;
     min-height: 50px;
-    background: #242333;
+    background: #03045e;
     color:white;
 }
 
 #logo{
     padding: 5px;
     margin: 5px 70px;
-    font-family: 'Black Ops One', cursive;
     text-shadow: 1px 1px black;
 }
 
@@ -110,16 +109,15 @@ section::before,footer::before{
     text-shadow: 1px 1px rgb(0 0 0);
 }
 
-#home::before{
+/* #home::before{
     content: '';
     position: absolute;
-    background: #242333;
     width: 100%;
     height: 100%;
     border-radius: 0 0 600px 600px;
     top: 0;
     z-index: -1;
-}
+} */
 #home h1{
     margin: 25px;
 }

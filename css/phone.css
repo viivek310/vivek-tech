@@ -1,7 +1,7 @@
 /* navigation bar */
-/* #navbar{
-    flex-direction: column;
-} */
+section::before{
+    border-radius: 0 0 200px 200px;
+}
 #navbar{
     justify-content: space-around;
     height: 70px;
@@ -12,11 +12,17 @@
     text-align: center;
     height: 0;
     top: -100%;
-    /* transform: scaleX(0); */
+    background: #03045e;
     width: 100%;
 }
-.menu-items .nav1{
-    background: red;
+.nav{
+    background: #01b0d3;   
+}
+.nav1{
+    background: #006d77;   
+}
+.nav2{
+    background: #a4c3b2;  
 }
 #navbar ul li{
     /* font-size: 1.1rem; */
@@ -41,9 +47,7 @@
     /* z-index: -2; */
 }
 /* home section  */
-.nav1{
-    background: red; 
-}
+
 
 #home {
    
@@ -122,9 +126,6 @@
 
 /* contact section  */
 
-#contact-box form{
-    width: 70%;
-}
 
 #contact-box input,#contact-box textarea{
     
@@ -152,6 +153,9 @@
 .font2{
     font-size: 1rem;
 }
+
+/* media query */
+
 @media screen and (max-width: 820px) {
      #services-container::before {
         height: 185%;
@@ -178,5 +182,8 @@
         }
         #contact{
             padding: 0
+        }
+        section::before{
+            border-radius: 0 0 150px 150px;
         }
 }
