@@ -9,12 +9,14 @@ const m = document.querySelector('.menu-items');
 // nav.style.background = "red";
 ham.addEventListener("click",()=>{
     item.classList.toggle("active");
+    ham.classList.toggle("active");
     }
 );
 
 document.querySelectorAll(".item").forEach(n => n.addEventListener("click",()=>{
     setTimeout(() => {
         item.classList.toggle("active");
+        ham.classList.toggle("active");
     },1100);
 
 }));
