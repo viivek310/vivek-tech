@@ -59,7 +59,7 @@ section::before{
 opacity: 0;
 }
 .hamburger.active{
-    transform: translateX(7px);
+    transform: translateX(7 px);
 }
 /* home section  */
 
@@ -152,7 +152,9 @@ opacity: 0;
 
 /* footer  */
 
-
+.footer div{
+    font-size: x-large;
+}
 
 /* utility classes */
 
