@@ -39,6 +39,7 @@ section::before,.footer::before{
     background: #03045e;
     color:white;
     text-shadow: 1px 1px black;
+    transition: all 0.8s ease;
 }
 
 #logo{
