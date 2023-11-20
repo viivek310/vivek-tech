@@ -30,7 +30,7 @@ section::before,.footer::before{
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    position: fixed;
+    position: sticky;
     top: 0px;
     width: 100%;
     z-index: 1;
